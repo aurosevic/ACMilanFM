@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="acmilan.PodaciControler">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="21.0" layoutY="25.0" prefHeight="478.0" prefWidth="305.0" spacing="5.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Golmani" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-243.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tabelaGolmani" prefWidth="320.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <columns>
+                  <TableColumn fx:id="colGIme" prefWidth="75.0" text="Ime" />
+                  <TableColumn fx:id="colGPrezime" prefWidth="75.0" text="Prezime" />
+               </columns>
+            </TableView>
+            <Label text="Odbrana" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-243.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tabelaOdbrana" prefWidth="320.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Ime" />
+                <TableColumn prefWidth="75.0" text="Prezime" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Label text="Sredina" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-243.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tabelaSredina" prefWidth="320.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Ime" />
+                <TableColumn prefWidth="75.0" text="Prezime" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Label text="Napad" VBox.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-243.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tabelaNapad" prefWidth="320.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Ime" />
+                <TableColumn prefWidth="75.0" text="Prezime" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Button fx:id="btnDodajIgraca" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#dodajIgraca" text="Dodaj igraca" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox layoutX="556.0" layoutY="14.0" prefHeight="559.0" prefWidth="222.0" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <TreeView prefHeight="559.0" prefWidth="222.0" />
+         </children>
+      </VBox>
+      <Button fx:id="btnBezveze" layoutX="396.0" layoutY="276.0" mnemonicParsing="false" onAction="#uradiTabelu" text="Button" />
+   </children>
+</AnchorPane>
